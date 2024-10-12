@@ -1,0 +1,112 @@
+.faq-section {
+  padding: 80px; /* Increased padding for more breathing space */
+  background-color: #000; /* Black background */
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 3em; /* Increased font size for the title */
+  margin-bottom: 50px; /* More space below the title */
+  font-weight: bold;
+  color: #fff; /* White text */
+}
+
+.faq-container {
+  max-width: 1000px; /* Increased max width for a larger container */
+  margin: 0 auto;
+  padding: 0 30px; /* Padding for smaller screens */
+}
+
+.faq-item {
+  background-color: #444; /* Darker background for FAQ item */
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.6); /* Softer shadow for depth */
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for visibility */
+  transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.faq-item:hover {
+  transform: scale(1.03);
+}
+
+.faq-item.active .faq-question {
+  background-color: #555; /* Slightly lighter gray when active */
+}
+
+.faq-question {
+  padding: 25px; /* Increased padding for larger clickable area */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #fff; /* White text for question */
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.8em; /* Increased font size for the question */
+  font-weight: 200;
+}
+
+.faq-question .icon {
+  font-size: 1.8em; /* Larger icon size */
+  color: #fff; /* White icon */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease; /* Smooth transition for max-height and padding */
+}
+
+.faq-answer.open {
+  max-height: 500px; /* Allow more space for the answer */
+  padding: 20px 25px; /* Increased padding for the answer section */
+  background-color: #222; /* Darker background for answer section */
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 1.3em; /* Increased font size for answers */
+  color: #fff; /* White text for answers */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2.5em; /* Adjusted font size for smaller screens */
+  }
+
+  .faq-question h3 {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+
+  .faq-question .icon {
+    font-size: 1.5em; /* Adjusted icon size for smaller screens */
+  }
+
+  .faq-answer p {
+    font-size: 1.1em; /* Adjusted font size for answers on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 2em; /* Further adjusted font size for very small screens */
+    margin-bottom: 30px; /* Adjusted margin */
+  }
+
+  .faq-question h3 {
+    font-size: 1.3em; /* Adjusted font size for questions on very small screens */
+  }
+
+  .faq-question {
+    padding: 15px; /* Adjusted padding for very small screens */
+  }
+
+  .faq-answer p {
+    font-size: 1em; /* Adjusted font size for answers on very small screens */
+  }
+}

@@ -1,0 +1,357 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coolvetica";
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px; /* Minimal border margin */
+}
+
+/* Video Styling */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.logo-icon {
+  margin-left: 5px;
+}
+.logo-text {
+  font-size: 24px;
+  color: #fff;
+
+  display: inline-block; /* Behaves like a div */
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.logo:hover {
+  color: #00b8ff; /* Add hover effect if needed */
+}
+
+.navbar .logo {
+  font-size: 24px;
+}
+
+.navbar .nav-links a {
+  margin: 0 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00b8ff;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  z-index: 1;
+}
+
+/* Hero Titles */
+.hero-title,
+.hero-title1 {
+  font-size: 210px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.hero-title {
+  animation: slideInFromLeft 1s ease-out forwards;
+  margin-left: 60px;
+}
+
+.hero-title1 {
+  opacity: 0.5;
+  animation: slideInFromRight 1s ease-out forwards;
+  margin-top: -80px;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  animation: slideInFromBottom 3s ease-out forwards;
+  margin-top: -1rem;
+  color: #ffffff;
+  animation: fade 3s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Call to Action Button */
+.cta-button {
+  padding: 15px 40px;
+  background-color: grey;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 60;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.cta-button:hover {
+  background-color: rgb(88, 85, 85);
+  transform: scale(1.1); /* Scale animation */
+}
+
+/* Animations */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero-title {
+    margin-bottom: 60px;
+    margin-right: 30px;
+  }
+
+  .hero-title,
+  .hero-title1 {
+    font-size: 90px;
+  }
+
+  .hero-subtitle {
+    font-size: 30px;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    margin-bottom: 70px;
+    margin-right: 40px;
+  }
+  .hero-title,
+  .hero-title1 {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coolvetica";
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Video Styling */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keep the video behind the navbar */
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 2; /* Ensure navbar is above the background video */
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+.navbar .nav-links a {
+  margin: 0 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #00b8ff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar.active .nav-links {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    margin: 20px 0;
+    font-size: 22px;
+  }
+}

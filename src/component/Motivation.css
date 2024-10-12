@@ -1,0 +1,115 @@
+.motivation-section {
+  padding: 5rem 2rem;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.motivation-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motivation-image {
+  width: 350px;
+  height: auto;
+  border-radius: 20%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  filter: drop-shadow(
+    0 0 20px rgba(233, 30, 99, 0.7)
+  ); /* Add shadow for a pop effect */
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.motivation-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #e91e63;
+  opacity: 0;
+  transform: translateX(50px); /* Initial position for animation */
+  transition: transform 0.5s, opacity 0.8s ease-in-out;
+}
+
+.motivation-paragraph {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateX(50px); /* Initial position for animation */
+  transition: transform 0.5s, opacity 0.8s ease-in-out;
+}
+
+.closing-paragraph {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #76ff03;
+  opacity: 0;
+  transform: translateX(50px); /* Initial position for animation */
+  transition: transform 0.5s, opacity 0.8s ease-in-out;
+}
+
+/* Hover Effects */
+.motivation-heading:hover,
+.closing-paragraph:hover,
+.motivation-paragraph:hover {
+  transform: scale(1.05);
+}
+
+.motivation-image:hover {
+  transform: rotateY(15deg) scale(1.05); /* Enlarge and rotate image on hover */
+}
+
+[data-aos] {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .motivation-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .motivation-heading {
+    font-size: 2.5rem;
+  }
+
+  .motivation-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .closing-paragraph {
+    font-size: 1.4rem;
+  }
+
+  .motivation-image {
+    width: 250px;
+  }
+}

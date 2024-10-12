@@ -1,0 +1,206 @@
+/* Main Section */
+.skills-section {
+  padding: 4rem 1rem;
+  background-color: #010101;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Section Title */
+.skills-section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Horizontal scrolling container */
+.skills-scroll-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 2rem;
+  white-space: nowrap;
+  width: 100vw;
+  padding-right: 3rem;
+}
+
+/* Individual Skill Card */
+.skills-skill-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  min-width: 400px;
+  min-height: 300px;
+  scroll-snap-align: center;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  text-align: left;
+}
+
+.skills-skill-card h3,
+.skills-skill-card p {
+  color: #000;
+  margin: 0;
+}
+
+.skills-skill-card p {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Plus Icon */
+.skills-plus-icon {
+  background: grey;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 47px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Styling */
+.skills-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.skills-modal-content {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: skills-fadeIn 0.3s ease;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+@keyframes skills-fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal Image */
+.skills-modal-thumbnail {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Modal Details */
+.skills-modal-details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.skills-modal-details h3,
+.skills-modal-details p {
+  margin: 0 0 1rem;
+}
+
+.skills-modal-details h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Modal Buttons */
+.skills-modal-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skills-get-started-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-get-started-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Close Button */
+.skills-close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Custom Scrollbar */
+.skills-scroll-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.skills-scroll-container::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 6px;
+}
+
+.skills-scroll-container::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills-skill-card {
+    min-width: 300px;
+  }
+
+  .skills-modal-content {
+    flex-direction: column; /* Stack image and content vertically on smaller screens */
+  }
+
+  .skills-modal-thumbnail {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

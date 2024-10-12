@@ -1,0 +1,76 @@
+/* Main container and section styling */
+.services-section {
+  padding: 100px 0;
+  background-color: #111; /* Dark background to match the theme */
+  color: white;
+  text-align: center;
+  position: relative;
+  opacity: 0; /* Hidden by default for animation */
+  transform: translateY(50px); /* Initial state for animation */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Service card styling */
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #222;
+  padding: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.service-card h3 {
+  font-size: 1.75rem;
+  color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Scroll-triggered animation */
+.services-section.scroll-reveal {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

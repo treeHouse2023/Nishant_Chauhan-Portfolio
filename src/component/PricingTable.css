@@ -1,0 +1,193 @@
+body {
+  background-color: #000;
+}
+.my-0 {
+  color: white;
+  font-weight: 2px;
+}
+.display-4 {
+  color: white;
+  margin-top: 30px;
+}
+.list-unstyled {
+  color: #fff;
+}
+/* Pricing Section */
+.pricing-section {
+  background-color: #fff; /* Black background */
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Pricing Header */
+.pricing-header {
+  margin-bottom: 40px;
+}
+
+.pricing-header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.pricing-header p {
+  font-size: 1.2rem;
+  color: #bdbdbd; /* Light gray for description */
+}
+
+/* Pricing Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 1.5rem;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #1e1e1e; /* Dark background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Slight shadow */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift on hover */
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff; /* White title */
+}
+
+.card-price {
+  font-size: 2.5rem;
+  color: #32cd32; /* Green price */
+  margin: 15px 0;
+}
+
+.card-details {
+  font-size: 1rem;
+  color: #bdbdbd; /* Light gray for details */
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: #32cd32; /* Green button */
+  border: none;
+  border-radius: 5px;
+  color: #000; /* Black text */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #28a428; /* Darker green on hover */
+}
+
+/* Pricing Table */
+.pricing-table {
+  margin-top: 50px;
+  color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.pricing-table th {
+  background-color: #1e1e1e; /* Dark table header */
+  color: #32cd32; /* Green header text */
+}
+
+.pricing-table td {
+  background-color: #333;
+  color: #bdbdbd; /* Light gray for table details */
+}
+
+.pricing-table tr:hover {
+  background-color: #444; /* Darker row on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing-header h1 {
+    font-size: 2.5rem;
+  }
+  .pricing-header p {
+    font-size: 1rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .card-price {
+    font-size: 2rem;
+  }
+}
+/* Toggle Button */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-option {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  z-index: 1;
+}
+
+.toggle-slider {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50px;
+  transition: left 0.3s ease;
+}
+
+.toggle.per-project .toggle-slider {
+  left: 5px;
+}
+
+.toggle.subscription .toggle-slider {
+  left: 125px;
+}
+
+.toggle.subscription .toggle-option:nth-child(2),
+.toggle.per-project .toggle-option:nth-child(1) {
+  color: #fff;
+}
