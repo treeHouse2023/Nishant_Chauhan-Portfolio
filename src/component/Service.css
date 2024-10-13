@@ -1,12 +1,11 @@
-/* Main container and section styling */
 .services-section {
   padding: 100px 0;
-  background-color: #111; /* Dark background to match the theme */
+  background-color: #111;
   color: white;
   text-align: center;
   position: relative;
-  opacity: 0; /* Hidden by default for animation */
-  transform: translateY(50px); /* Initial state for animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .container {
@@ -16,7 +15,7 @@
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -34,6 +33,7 @@
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 .service-card {
@@ -41,6 +41,10 @@
   padding: 40px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1; /* Allow cards to resize */
+  min-width: 280px; /* Ensure cards don't shrink too small */
+  max-width: 400px; /* Optional, limit card size on large screens */
+  margin-bottom: 20px;
 }
 
 .service-card:hover {
@@ -72,5 +76,44 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%; /* Make cards full-width on small screens */
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
   }
 }

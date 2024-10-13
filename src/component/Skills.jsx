@@ -5,7 +5,7 @@ const skillsData = [
   {
     "id": 1,
     "title": "Web Development",
-    "description": "Building responsive and interactive web applications using modern technologies.",
+    "description": "Building responsive and interactive web applications using modern technologies. Skilled in crafting optimized websites with an emphasis on performance. Focus on delivering user-friendly and scalable solutions.",
     "price": "Custom Pricing",
     "features": ["HTML, CSS, JavaScript", "React and Tailwind CSS", "Cross-browser compatibility"],
     "image": "web.png"
@@ -13,7 +13,7 @@ const skillsData = [
   {
     "id": 2,
     "title": "Video Editing",
-    "description": "Creating engaging and high-quality video content tailored to client needs.",
+    "description": "Creating engaging and high-quality video content tailored to client needs. Experienced in editing tutorials, promotional content, and social media reels. Expert in visual storytelling and maintaining a consistent narrative flow.",
     "price": "₹350/reel, ₹650 for long video (up to 10 min)",
     "features": ["Concise technical tutorials", "Attention to detail", "Storytelling techniques"],
     "image": "video.png"
@@ -21,7 +21,7 @@ const skillsData = [
   {
     "id": 3,
     "title": "Digital Marketing",
-    "description": "Developing data-driven marketing strategies to enhance brand visibility.",
+    "description": "Developing data-driven marketing strategies to enhance brand visibility. Specializing in optimizing campaigns for maximum engagement. Focused on achieving measurable results through innovative techniques.",
     "price": "Custom Pricing",
     "features": ["Social media management", "Ad campaign optimization", "Performance analysis"],
     "image": "dg.png"
@@ -29,7 +29,7 @@ const skillsData = [
   {
     "id": 4,
     "title": "Photography",
-    "description": "Capturing high-quality images for various projects.",
+    "description": "Capturing high-quality images for various projects. Proficient in both indoor and outdoor shoots, creating stunning visuals. Bringing creativity and precision to every photography session.",
     "price": "₹1,199",
     "features": ["Event and portrait photography", "Editing and retouching", "Creative direction"],
     "image": "cam.png"
@@ -37,7 +37,7 @@ const skillsData = [
   {
     "id": 5,
     "title": "Article Writing",
-    "description": "Creating informative and engaging articles tailored for target audiences.",
+    "description": "Creating informative and engaging articles tailored for target audiences. Adept at writing long-form content and quick-read blogs. Ensuring high-quality content with a strong SEO focus for better visibility.",
     "price": "₹999",
     "features": ["Research and fact-checking", "SEO optimization", "Creative content strategies"],
     "image": "art.png"
@@ -45,7 +45,7 @@ const skillsData = [
   {
     "id": 6,
     "title": "Social Media Management",
-    "description": "Boost your online presence with tailored content and community engagement strategies.",
+    "description": "Boost your online presence with tailored content and community engagement strategies. Providing consistent growth through customized content. Managing your brand's voice to keep your audience engaged.",
     "price": "₹2,499",
     "features": [
       "Content creation and scheduling",
@@ -55,6 +55,7 @@ const skillsData = [
     "image": "soc.png"
   }
 ];
+
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState(null);
