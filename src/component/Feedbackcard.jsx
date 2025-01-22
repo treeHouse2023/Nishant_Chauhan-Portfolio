@@ -4,12 +4,13 @@ import './FeedbackCard.css'; // Importing CSS for styling
 
 // Add the feedback data here
 const feedbackData = [
-  { companyName: 'Batch-Man', feedbackImg: '1.png', personName: '- Karanveer Chouhan', linkedinUrl: 'https://www.linkedin.com/in/thekvc/' },
-  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '3.png', personName: '- Dr. Balpreet Kaur', linkedinUrl: 'https://www.linkedin.com/in/dr-balpreet-kaur-a31728a1/' },
-  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '4.png', personName: '- Dr. Mukhtiar Singh', linkedinUrl: 'https://www.linkedin.com/in/dr-mukhtiar-singh-03312462/' },
-  { companyName: 'Wollvo Design | TraiKare', feedbackImg: '2.png', personName: '- Namish Kashyap', linkedinUrl: 'https://www.linkedin.com/in/namishkashyap/' },
-  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '5.png', personName: '- Himanshu Aggarwal', linkedinUrl: 'https://www.linkedin.com/in/himanshu4319/' },
-  { companyName: '', feedbackImg: '6.png', personName: '- Vaibhav Chauhan', linkedinUrl: 'https://www.linkedin.com/in/vaibhav-chauhan17/' },
+  { companyName: 'Batch-Man', feedbackImg: '1.png', personName: '- Karanveer Chouhan', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
+  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '3.png', personName: '- Dr. Balpreet Kaur', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
+  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '4.png', personName: '- Dr. Mukhtiar Singh', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
+  { companyName: 'Wollvo Design | TraiKare', feedbackImg: '2.png', personName: '- Namish Kashyap', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
+  { companyName: 'Assistant Professor, DAV UNIVERSITY', feedbackImg: '5.png', personName: '- Himanshu Aggarwal', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
+  { companyName: 'Business Development Executive @Veeba Foods Services Private Limited', feedbackImg: '6.png', personName: '- Vaibhav Chauhan', linkedinUrl: 'https://www.linkedin.com/in/vaibhav-chauhan17/' },
+  { companyName: 'GDG on Campus Organizer 24 and Founder of GDGoC-DAVU', feedbackImg: '99.png', personName: '- Surbhi', linkedinUrl: 'https://www.linkedin.com/in/nishant-chauhan-870239234/details/recommendations/?detailScreenTabIndex=0' },
 ];
 
 const FeedbackList = () => {

@@ -5,7 +5,7 @@ const skillsData = [
   {
     "id": 1,
     "title": "Web Development",
-    "description": "Building responsive and interactive web applications using modern technologies. Skilled in crafting optimized websites with an emphasis on performance. Focus on delivering user-friendly and scalable solutions.",
+    "description": "Designing and building responsive, interactive websites that prioritize performance and user experience. Skilled in modern web technologies to create scalable and visually appealing web applications.",
     "price": "Custom Pricing",
     "features": ["HTML, CSS, JavaScript", "React and Tailwind CSS", "Cross-browser compatibility"],
     "image": "web.png"
@@ -13,40 +13,52 @@ const skillsData = [
   {
     "id": 2,
     "title": "Video Editing",
-    "description": "Creating engaging and high-quality video content tailored to client needs. Experienced in editing tutorials, promotional content, and social media reels. Expert in visual storytelling and maintaining a consistent narrative flow.",
-    "price": "₹350/reel, ₹650 for long video (up to 10 min)",
+    "description": "Crafting professional, engaging video content tailored for diverse platforms. Experienced in storytelling, seamless transitions, and visual enhancements to deliver impactful videos.",
+    "price": "Custom Pricing",
     "features": ["Concise technical tutorials", "Attention to detail", "Storytelling techniques"],
     "image": "video.png"
   },
   {
     "id": 3,
     "title": "Digital Marketing",
-    "description": "Developing data-driven marketing strategies to enhance brand visibility. Specializing in optimizing campaigns for maximum engagement. Focused on achieving measurable results through innovative techniques.",
+    "description": "Creating data-driven marketing campaigns to enhance your brand's visibility and audience engagement. Specializing in innovative techniques to drive measurable results and boost your online presence.",
     "price": "Custom Pricing",
     "features": ["Social media management", "Ad campaign optimization", "Performance analysis"],
     "image": "dg.png"
   },
   {
+    "id": 7,
+    "title": "Graphic Designing",
+    "description": "Transforming ideas into visually compelling designs for businesses and individuals. Expertise in creating logos, social media graphics, posters, and brand assets that leave a lasting impression.",
+    "price": "Custom Pricing",
+    "features": [
+      "Creative and custom designs",
+      "Logo, poster, and brand identity creation",
+      "High-resolution graphics for all platforms"
+    ],
+    "image": "graphic.jpg"
+  },
+  {
     "id": 4,
     "title": "Photography",
-    "description": "Capturing high-quality images for various projects. Proficient in both indoor and outdoor shoots, creating stunning visuals. Bringing creativity and precision to every photography session.",
-    "price": "₹1,199",
+    "description": "Delivering stunning visual content through creative indoor and outdoor photography sessions. Specializing in capturing meaningful moments and bringing artistic precision to every project.",
+    "price": "Custom Pricing",
     "features": ["Event and portrait photography", "Editing and retouching", "Creative direction"],
     "image": "cam.png"
   },
   {
     "id": 5,
     "title": "Article Writing",
-    "description": "Creating informative and engaging articles tailored for target audiences. Adept at writing long-form content and quick-read blogs. Ensuring high-quality content with a strong SEO focus for better visibility.",
-    "price": "₹999",
+    "description": "Developing compelling and SEO-friendly content to captivate your audience. Skilled in writing long-form articles, quick-read blogs, and in-depth pieces tailored for maximum engagement.",
+    "price": "Custom Pricing",
     "features": ["Research and fact-checking", "SEO optimization", "Creative content strategies"],
     "image": "art.png"
   },
   {
     "id": 6,
     "title": "Social Media Management",
-    "description": "Boost your online presence with tailored content and community engagement strategies. Providing consistent growth through customized content. Managing your brand's voice to keep your audience engaged.",
-    "price": "₹2,499",
+    "description": "Elevate your brand’s online presence with expert content strategies, audience engagement, and performance analytics. Focused on delivering consistent growth and an impactful online identity.",
+    "price": "Custom Pricing",
     "features": [
       "Content creation and scheduling",
       "Community engagement and management",
@@ -55,6 +67,9 @@ const skillsData = [
     "image": "soc.png"
   }
 ];
+
+
+
 
 
 const Skills = () => {

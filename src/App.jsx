@@ -11,6 +11,8 @@ import Faq from './component/Faq';
 import PricingTable from './component/PricingTable';
 import ScrollToTop from './component/ScrollToTop';  // Import the ScrollToTop component
 import CustomCursor from './component/CustomCursor';  // Import the CustomCursor component
+import VideoPortfolio from './component/VideoPortfolio'; // Import VideoPortfolio component
+import DesignPortfolio from './component/DesignPortfolio'; // Import DesignPortfolio component
 
 function App() {
   return (
@@ -34,6 +36,16 @@ function App() {
       {/* Projects Section */}
       <section id="projects">
         <ProjectDisplay />
+      </section>
+
+      {/* Video Portfolio Section */}
+      <section id="video-portfolio">
+        <VideoPortfolio />
+      </section>
+
+      {/* Design Portfolio Section */}
+      <section id="design-portfolio">
+        <DesignPortfolio />
       </section>
 
       {/* Feedback Section */}

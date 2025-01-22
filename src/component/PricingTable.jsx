@@ -60,7 +60,7 @@ const PricingTable = () => {
                   <h4 className="my-0">Video Editing (Subscription)</h4>
                 </div>
                 <div className="card-body">
-                  <h1 className="card-title pricing-card-title">₹4,500<small>/month</small></h1>
+                  <h1 className="card-title pricing-card-title">Custom Pricing<small>/month</small></h1>
                   <ul className="list-unstyled mt-3 mb-4">
                     <li>10 reels (up to 2 revisions each)</li>
                     <li>Consistent content creation</li>
@@ -111,7 +111,7 @@ const PricingTable = () => {
                   <h4 className="my-0">Video Editing</h4>
                 </div>
                 <div className="card-body">
-                  <h1 className="card-title pricing-card-title">₹350<small>/reel</small> | ₹650<small>/10 min video</small></h1>
+                  <h1 className="card-title pricing-card-title">Custom Pricing <small>(Long Videos | Reels) </small> </h1>
                   <ul className="list-unstyled mt-3 mb-4">
                     <li>Up to 2 revisions</li>
                     <li>Tailored for engagement</li> 
